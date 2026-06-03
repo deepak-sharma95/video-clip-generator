@@ -1,0 +1,8 @@
+GitHub tutorial by apna clg
+ 
+commit =  final changes it is two step process
+-> git add . :-  use for all all file
+-> git status :- to check file  is modified or unmodified
+-> git commit :- after add file git commit final changes in file or folder
+->git push origin main :- pudh the code in GitHub
+-> git init

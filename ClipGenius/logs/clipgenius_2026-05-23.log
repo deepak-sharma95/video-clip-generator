@@ -1,0 +1,333 @@
+2026-05-23 19:26:30 | INFO     | backend.utils.logger:setup_logger:50 | Logger initialised — level=INFO
+2026-05-23 19:26:30 | DEBUG    | backend.utils.validators:is_valid_youtube_url:43 | URL validated successfully: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:26:30 | DEBUG    | backend.utils.file_manager:__init__:39 | FileManager initialised — job_id=job_1779544590, dir=C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544590
+2026-05-23 19:26:31 | DEBUG    | backend.services.downloader:_verify_dependencies:46 | Dependency verified: yt-dlp
+2026-05-23 19:26:31 | DEBUG    | backend.services.downloader:_verify_dependencies:61 | Dependency verified: ffmpeg at C:\Users\Dipes\AppData\Local\Programs\Python\Python310\lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win-x86_64-v7.1.exe
+2026-05-23 19:26:31 | DEBUG    | backend.utils.validators:is_valid_youtube_url:43 | URL validated successfully: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:26:31 | INFO     | backend.services.downloader:get_video_info:85 | Fetching video info: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:26:35 | INFO     | backend.services.downloader:get_video_info:115 | Video info fetched: "Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster)" (213s) by Rick Astley
+2026-05-23 19:26:35 | DEBUG    | backend.utils.validators:is_valid_youtube_url:43 | URL validated successfully: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:26:35 | INFO     | backend.services.downloader:download_video:160 | Downloading video: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:26:35 | INFO     | backend.services.downloader:download_video:161 | Output path: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544590\source_video.mp4
+2026-05-23 19:26:35 | DEBUG    | backend.services.downloader:download_video:187 | Running command: yt-dlp -f bestvideo[height<=1080]+bestaudio/best[height<=1080]/best --merge-output-format mp4 --ffmpeg-location C:\Users\Dipes\AppData\Local\Programs\Python\Python310\lib\site-packages\imageio_ffmpeg\binaries -o C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544590\source_video.mp4 --no-playlist --no-warnings --progress --newline https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:26:53 | DEBUG    | backend.services.downloader:_find_downloaded_file:299 | Found file by stem match: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544590\source_video.f251.webm
+2026-05-23 19:26:53 | INFO     | backend.services.downloader:download_video:206 | Video downloaded successfully: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544590\source_video.f251.webm (3.3 MB)
+2026-05-23 19:26:53 | INFO     | backend.services.downloader:extract_audio:237 | Extracting audio from: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544590\source_video.f251.webm
+2026-05-23 19:26:54 | INFO     | backend.services.downloader:extract_audio:267 | Audio extracted successfully: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544590\source_audio.wav (9.0 MB)
+2026-05-23 19:26:54 | INFO     | backend.analysis.audio_energy:analyze:67 | Starting audio energy analysis: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544590\source_audio.wav
+2026-05-23 19:27:05 | INFO     | backend.analysis.audio_energy:analyze:76 | Audio loaded: 213.0s, sample_rate=22050
+2026-05-23 19:27:05 | DEBUG    | backend.analysis.audio_energy:_compute_rms:104 | RMS computed: 9176 frames, max=1.000
+2026-05-23 19:27:05 | DEBUG    | backend.analysis.audio_energy:_compute_spectral_centroid:119 | Spectral centroid computed: 9176 frames
+2026-05-23 19:27:05 | DEBUG    | backend.analysis.audio_energy:_compute_zcr:132 | ZCR computed: 9176 frames
+2026-05-23 19:27:05 | DEBUG    | backend.analysis.audio_energy:_compute_onset_strength:145 | Onset strength computed: 9176 frames
+2026-05-23 19:27:05 | INFO     | backend.analysis.audio_energy:analyze:87 | Energy analysis complete: 213 frames generated
+2026-05-23 19:27:05 | INFO     | backend.analysis.scorer:find_viral_moments:54 | Scoring 213 frames — clip=18s, max=2
+2026-05-23 19:27:05 | INFO     | backend.analysis.scorer:find_viral_moments:63 |   #1: 01:37->01:55 score=1.000
+2026-05-23 19:27:05 | INFO     | backend.analysis.scorer:find_viral_moments:63 |   #2: 00:42->01:00 score=0.975
+2026-05-23 19:27:05 | INFO     | backend.services.clip_generator:generate_clips:51 | Generating 2 clips from: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544590\source_video.f251.webm
+2026-05-23 19:27:06 | INFO     | backend.utils.file_manager:cleanup_temp:76 | Cleaned up temp directory: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544590
+2026-05-23 19:28:22 | INFO     | backend.utils.logger:setup_logger:50 | Logger initialised — level=INFO
+2026-05-23 19:28:22 | DEBUG    | backend.utils.validators:is_valid_youtube_url:43 | URL validated successfully: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:28:22 | DEBUG    | backend.utils.file_manager:__init__:39 | FileManager initialised — job_id=job_1779544702, dir=C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544702
+2026-05-23 19:28:22 | DEBUG    | backend.services.downloader:_verify_dependencies:46 | Dependency verified: yt-dlp
+2026-05-23 19:28:22 | DEBUG    | backend.services.downloader:_verify_dependencies:61 | Dependency verified: ffmpeg at C:\Users\Dipes\AppData\Local\Programs\Python\Python310\lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win-x86_64-v7.1.exe
+2026-05-23 19:28:22 | DEBUG    | backend.utils.validators:is_valid_youtube_url:43 | URL validated successfully: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:28:22 | INFO     | backend.services.downloader:get_video_info:85 | Fetching video info: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:28:25 | INFO     | backend.services.downloader:get_video_info:115 | Video info fetched: "Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster)" (213s) by Rick Astley
+2026-05-23 19:28:25 | DEBUG    | backend.utils.validators:is_valid_youtube_url:43 | URL validated successfully: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:28:25 | INFO     | backend.services.downloader:download_video:160 | Downloading video: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:28:25 | INFO     | backend.services.downloader:download_video:161 | Output path: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544702\source_video.mp4
+2026-05-23 19:28:25 | DEBUG    | backend.services.downloader:download_video:187 | Running command: yt-dlp -f bestvideo[height<=1080]+bestaudio/best[height<=1080]/best --merge-output-format mp4 --ffmpeg-location C:\Users\Dipes\AppData\Local\Programs\Python\Python310\lib\site-packages\imageio_ffmpeg\binaries -o C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544702\source_video.mp4 --no-playlist --no-warnings --progress --newline https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:28:38 | DEBUG    | backend.services.downloader:_find_downloaded_file:299 | Found file by stem match: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544702\source_video.f251.webm
+2026-05-23 19:28:38 | INFO     | backend.services.downloader:download_video:206 | Video downloaded successfully: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544702\source_video.f251.webm (3.3 MB)
+2026-05-23 19:28:38 | INFO     | backend.services.downloader:extract_audio:237 | Extracting audio from: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544702\source_video.f251.webm
+2026-05-23 19:28:38 | INFO     | backend.services.downloader:extract_audio:267 | Audio extracted successfully: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544702\source_audio.wav (9.0 MB)
+2026-05-23 19:28:38 | INFO     | backend.analysis.audio_energy:analyze:67 | Starting audio energy analysis: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544702\source_audio.wav
+2026-05-23 19:28:41 | INFO     | backend.analysis.audio_energy:analyze:76 | Audio loaded: 213.0s, sample_rate=22050
+2026-05-23 19:28:41 | DEBUG    | backend.analysis.audio_energy:_compute_rms:104 | RMS computed: 9176 frames, max=1.000
+2026-05-23 19:28:41 | DEBUG    | backend.analysis.audio_energy:_compute_spectral_centroid:119 | Spectral centroid computed: 9176 frames
+2026-05-23 19:28:41 | DEBUG    | backend.analysis.audio_energy:_compute_zcr:132 | ZCR computed: 9176 frames
+2026-05-23 19:28:41 | DEBUG    | backend.analysis.audio_energy:_compute_onset_strength:145 | Onset strength computed: 9176 frames
+2026-05-23 19:28:41 | INFO     | backend.analysis.audio_energy:analyze:87 | Energy analysis complete: 213 frames generated
+2026-05-23 19:28:41 | INFO     | backend.analysis.scorer:find_viral_moments:54 | Scoring 213 frames — clip=18s, max=2
+2026-05-23 19:28:41 | INFO     | backend.analysis.scorer:find_viral_moments:63 |   #1: 01:37->01:55 score=1.000
+2026-05-23 19:28:41 | INFO     | backend.analysis.scorer:find_viral_moments:63 |   #2: 00:42->01:00 score=0.975
+2026-05-23 19:28:41 | INFO     | backend.services.clip_generator:generate_clips:51 | Generating 2 clips from: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544702\source_video.f251.webm
+2026-05-23 19:28:42 | ERROR    | __main__:run_pipeline:132 | Failed to load source video: MoviePy error: failed to read the first frame of video file C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544702\source_video.f251.webm. That might mean that the file is corrupted. That may also mean that you are using a deprecated version of FFMPEG. On Ubuntu/Debian for instance the version in the repos is deprecated. Please update to a recent version from the website.
+2026-05-23 19:28:42 | INFO     | backend.utils.file_manager:cleanup_temp:76 | Cleaned up temp directory: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544702
+2026-05-23 19:30:18 | INFO     | backend.utils.logger:setup_logger:50 | Logger initialised — level=INFO
+2026-05-23 19:30:18 | DEBUG    | backend.utils.validators:is_valid_youtube_url:43 | URL validated successfully: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:30:18 | DEBUG    | backend.utils.file_manager:__init__:39 | FileManager initialised — job_id=job_1779544818, dir=C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544818
+2026-05-23 19:30:19 | DEBUG    | backend.services.downloader:_verify_dependencies:46 | Dependency verified: yt-dlp
+2026-05-23 19:30:19 | DEBUG    | backend.services.downloader:_verify_dependencies:61 | Dependency verified: ffmpeg at C:\Users\Dipes\AppData\Local\Programs\Python\Python310\lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win-x86_64-v7.1.exe
+2026-05-23 19:30:19 | DEBUG    | backend.utils.validators:is_valid_youtube_url:43 | URL validated successfully: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:30:19 | INFO     | backend.services.downloader:get_video_info:85 | Fetching video info: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:30:22 | INFO     | backend.services.downloader:get_video_info:115 | Video info fetched: "Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster)" (213s) by Rick Astley
+2026-05-23 19:30:22 | DEBUG    | backend.utils.validators:is_valid_youtube_url:43 | URL validated successfully: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:30:22 | INFO     | backend.services.downloader:download_video:160 | Downloading video: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:30:22 | INFO     | backend.services.downloader:download_video:161 | Output path: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544818\source_video.mp4
+2026-05-23 19:30:22 | DEBUG    | backend.services.downloader:download_video:183 | Running command: yt-dlp -f best[ext=mp4]/best --merge-output-format mp4 --ffmpeg-location C:\Users\Dipes\AppData\Local\Programs\Python\Python310\lib\site-packages\imageio_ffmpeg\binaries -o C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544818\source_video.mp4 --no-playlist --no-warnings --progress --newline https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:30:30 | INFO     | backend.services.downloader:download_video:202 | Video downloaded successfully: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544818\source_video.mp4 (11.3 MB)
+2026-05-23 19:30:30 | INFO     | backend.services.downloader:extract_audio:233 | Extracting audio from: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544818\source_video.mp4
+2026-05-23 19:30:30 | INFO     | backend.services.downloader:extract_audio:263 | Audio extracted successfully: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544818\source_audio.wav (9.0 MB)
+2026-05-23 19:30:30 | INFO     | backend.analysis.audio_energy:analyze:67 | Starting audio energy analysis: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544818\source_audio.wav
+2026-05-23 19:30:33 | INFO     | backend.analysis.audio_energy:analyze:76 | Audio loaded: 213.0s, sample_rate=22050
+2026-05-23 19:30:33 | DEBUG    | backend.analysis.audio_energy:_compute_rms:104 | RMS computed: 9176 frames, max=1.000
+2026-05-23 19:30:33 | DEBUG    | backend.analysis.audio_energy:_compute_spectral_centroid:119 | Spectral centroid computed: 9176 frames
+2026-05-23 19:30:33 | DEBUG    | backend.analysis.audio_energy:_compute_zcr:132 | ZCR computed: 9176 frames
+2026-05-23 19:30:33 | DEBUG    | backend.analysis.audio_energy:_compute_onset_strength:145 | Onset strength computed: 9176 frames
+2026-05-23 19:30:33 | INFO     | backend.analysis.audio_energy:analyze:87 | Energy analysis complete: 213 frames generated
+2026-05-23 19:30:33 | INFO     | backend.analysis.scorer:find_viral_moments:54 | Scoring 213 frames — clip=18s, max=2
+2026-05-23 19:30:33 | INFO     | backend.analysis.scorer:find_viral_moments:63 |   #1: 01:37->01:55 score=1.000
+2026-05-23 19:30:33 | INFO     | backend.analysis.scorer:find_viral_moments:63 |   #2: 00:42->01:00 score=0.971
+2026-05-23 19:30:33 | INFO     | backend.services.clip_generator:generate_clips:51 | Generating 2 clips from: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544818\source_video.mp4
+2026-05-23 19:30:34 | INFO     | backend.services.clip_generator:generate_clips:60 | Source video loaded: 213.0s, [640, 360]
+2026-05-23 19:30:34 | INFO     | backend.services.clip_generator:_extract_single_clip:89 | Extracting clip #1: 01:37 → 01:55 (score=1.000)
+2026-05-23 19:30:34 | ERROR    | backend.services.clip_generator:generate_clips:69 | Failed to generate clip #1: 'VideoFileClip' object has no attribute 'subclip'
+2026-05-23 19:30:34 | INFO     | backend.services.clip_generator:_extract_single_clip:89 | Extracting clip #2: 00:42 → 01:00 (score=0.971)
+2026-05-23 19:30:34 | ERROR    | backend.services.clip_generator:generate_clips:69 | Failed to generate clip #2: 'VideoFileClip' object has no attribute 'subclip'
+2026-05-23 19:30:34 | INFO     | backend.services.clip_generator:generate_clips:77 | Successfully generated 0/2 clips
+2026-05-23 19:30:34 | INFO     | backend.utils.file_manager:cleanup_temp:76 | Cleaned up temp directory: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544818
+2026-05-23 19:32:14 | INFO     | backend.utils.logger:setup_logger:50 | Logger initialised — level=INFO
+2026-05-23 19:32:14 | DEBUG    | backend.utils.validators:is_valid_youtube_url:43 | URL validated successfully: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:32:14 | DEBUG    | backend.utils.file_manager:__init__:39 | FileManager initialised — job_id=job_1779544934, dir=C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544934
+2026-05-23 19:32:15 | DEBUG    | backend.services.downloader:_verify_dependencies:46 | Dependency verified: yt-dlp
+2026-05-23 19:32:15 | DEBUG    | backend.services.downloader:_verify_dependencies:61 | Dependency verified: ffmpeg at C:\Users\Dipes\AppData\Local\Programs\Python\Python310\lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win-x86_64-v7.1.exe
+2026-05-23 19:32:15 | DEBUG    | backend.utils.validators:is_valid_youtube_url:43 | URL validated successfully: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:32:15 | INFO     | backend.services.downloader:get_video_info:85 | Fetching video info: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:32:18 | INFO     | backend.services.downloader:get_video_info:115 | Video info fetched: "Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster)" (213s) by Rick Astley
+2026-05-23 19:32:18 | DEBUG    | backend.utils.validators:is_valid_youtube_url:43 | URL validated successfully: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:32:18 | INFO     | backend.services.downloader:download_video:160 | Downloading video: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:32:18 | INFO     | backend.services.downloader:download_video:161 | Output path: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544934\source_video.mp4
+2026-05-23 19:32:18 | DEBUG    | backend.services.downloader:download_video:183 | Running command: yt-dlp -f best[ext=mp4]/best --merge-output-format mp4 --ffmpeg-location C:\Users\Dipes\AppData\Local\Programs\Python\Python310\lib\site-packages\imageio_ffmpeg\binaries -o C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544934\source_video.mp4 --no-playlist --no-warnings --progress --newline https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:32:25 | INFO     | backend.services.downloader:download_video:202 | Video downloaded successfully: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544934\source_video.mp4 (11.3 MB)
+2026-05-23 19:32:25 | INFO     | backend.services.downloader:extract_audio:233 | Extracting audio from: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544934\source_video.mp4
+2026-05-23 19:32:25 | INFO     | backend.services.downloader:extract_audio:263 | Audio extracted successfully: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544934\source_audio.wav (9.0 MB)
+2026-05-23 19:32:25 | INFO     | backend.analysis.audio_energy:analyze:67 | Starting audio energy analysis: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544934\source_audio.wav
+2026-05-23 19:32:27 | INFO     | backend.analysis.audio_energy:analyze:76 | Audio loaded: 213.0s, sample_rate=22050
+2026-05-23 19:32:27 | DEBUG    | backend.analysis.audio_energy:_compute_rms:104 | RMS computed: 9176 frames, max=1.000
+2026-05-23 19:32:28 | DEBUG    | backend.analysis.audio_energy:_compute_spectral_centroid:119 | Spectral centroid computed: 9176 frames
+2026-05-23 19:32:28 | DEBUG    | backend.analysis.audio_energy:_compute_zcr:132 | ZCR computed: 9176 frames
+2026-05-23 19:32:28 | DEBUG    | backend.analysis.audio_energy:_compute_onset_strength:145 | Onset strength computed: 9176 frames
+2026-05-23 19:32:28 | INFO     | backend.analysis.audio_energy:analyze:87 | Energy analysis complete: 213 frames generated
+2026-05-23 19:32:28 | INFO     | backend.analysis.scorer:find_viral_moments:54 | Scoring 213 frames — clip=18s, max=2
+2026-05-23 19:32:28 | INFO     | backend.analysis.scorer:find_viral_moments:63 |   #1: 01:37->01:55 score=1.000
+2026-05-23 19:32:28 | INFO     | backend.analysis.scorer:find_viral_moments:63 |   #2: 00:42->01:00 score=0.971
+2026-05-23 19:32:28 | INFO     | backend.services.clip_generator:generate_clips:51 | Generating 2 clips from: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544934\source_video.mp4
+2026-05-23 19:32:28 | INFO     | backend.services.clip_generator:generate_clips:60 | Source video loaded: 213.0s, [640, 360]
+2026-05-23 19:32:28 | INFO     | backend.services.clip_generator:_extract_single_clip:89 | Extracting clip #1: 01:37 → 01:55 (score=1.000)
+2026-05-23 19:32:30 | INFO     | backend.services.clip_generator:_extract_single_clip:115 | Clip #1 saved: C:\Users\Dipes\antigravity project\ClipGenius\output\job_1779544934_clip_01.mp4 (1.3 MB)
+2026-05-23 19:32:30 | INFO     | backend.services.clip_generator:_extract_single_clip:89 | Extracting clip #2: 00:42 → 01:00 (score=0.971)
+2026-05-23 19:32:32 | INFO     | backend.services.clip_generator:_extract_single_clip:115 | Clip #2 saved: C:\Users\Dipes\antigravity project\ClipGenius\output\job_1779544934_clip_02.mp4 (1.3 MB)
+2026-05-23 19:32:32 | INFO     | backend.services.clip_generator:generate_clips:77 | Successfully generated 2/2 clips
+2026-05-23 19:32:32 | INFO     | backend.utils.file_manager:cleanup_temp:76 | Cleaned up temp directory: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779544934
+2026-05-23 19:36:48 | INFO     | backend.utils.logger:setup_logger:50 | Logger initialised — level=INFO
+2026-05-23 19:36:48 | INFO     | __main__:start_api:158 | Starting ClipGenius API on http://localhost:5000
+2026-05-23 19:39:46 | DEBUG    | backend.utils.validators:is_valid_youtube_url:43 | URL validated successfully: https://youtu.be/AaMdXZMvT3w?si=85FNUBWBsHiTnXSe
+2026-05-23 19:39:46 | DEBUG    | backend.utils.file_manager:__init__:39 | FileManager initialised — job_id=job_1779545386, dir=C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779545386
+2026-05-23 19:39:47 | DEBUG    | backend.services.downloader:_verify_dependencies:46 | Dependency verified: yt-dlp
+2026-05-23 19:39:47 | DEBUG    | backend.services.downloader:_verify_dependencies:61 | Dependency verified: ffmpeg at C:\Users\Dipes\AppData\Local\Programs\Python\Python310\lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win-x86_64-v7.1.exe
+2026-05-23 19:39:47 | DEBUG    | backend.utils.validators:is_valid_youtube_url:43 | URL validated successfully: https://youtu.be/AaMdXZMvT3w?si=85FNUBWBsHiTnXSe
+2026-05-23 19:39:47 | INFO     | backend.services.downloader:get_video_info:85 | Fetching video info: https://youtu.be/AaMdXZMvT3w?si=85FNUBWBsHiTnXSe
+2026-05-23 19:39:50 | INFO     | backend.services.downloader:get_video_info:115 | Video info fetched: "Survive 30 Days On An Island With Your Ex, Win $250,000" (2349s) by MrBeast
+2026-05-23 19:39:50 | DEBUG    | backend.utils.validators:is_valid_youtube_url:43 | URL validated successfully: https://youtu.be/AaMdXZMvT3w?si=85FNUBWBsHiTnXSe
+2026-05-23 19:39:50 | INFO     | backend.services.downloader:download_video:160 | Downloading video: https://youtu.be/AaMdXZMvT3w?si=85FNUBWBsHiTnXSe
+2026-05-23 19:39:50 | INFO     | backend.services.downloader:download_video:161 | Output path: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779545386\source_video.mp4
+2026-05-23 19:39:50 | DEBUG    | backend.services.downloader:download_video:183 | Running command: yt-dlp -f best[ext=mp4]/best --merge-output-format mp4 --ffmpeg-location C:\Users\Dipes\AppData\Local\Programs\Python\Python310\lib\site-packages\imageio_ffmpeg\binaries -o C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779545386\source_video.mp4 --no-playlist --no-warnings --progress --newline https://youtu.be/AaMdXZMvT3w?si=85FNUBWBsHiTnXSe
+2026-05-23 19:41:46 | INFO     | backend.services.downloader:download_video:202 | Video downloaded successfully: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779545386\source_video.mp4 (186.1 MB)
+2026-05-23 19:41:46 | INFO     | backend.services.downloader:extract_audio:233 | Extracting audio from: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779545386\source_video.mp4
+2026-05-23 19:41:49 | INFO     | backend.services.downloader:extract_audio:263 | Audio extracted successfully: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779545386\source_audio.wav (98.8 MB)
+2026-05-23 19:41:49 | INFO     | backend.analysis.audio_energy:analyze:67 | Starting audio energy analysis: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779545386\source_audio.wav
+2026-05-23 19:41:58 | INFO     | backend.analysis.audio_energy:analyze:76 | Audio loaded: 2349.0s, sample_rate=22050
+2026-05-23 19:42:00 | DEBUG    | backend.analysis.audio_energy:_compute_rms:104 | RMS computed: 101163 frames, max=1.000
+2026-05-23 19:42:09 | DEBUG    | backend.analysis.audio_energy:_compute_spectral_centroid:119 | Spectral centroid computed: 101163 frames
+2026-05-23 19:42:11 | DEBUG    | backend.analysis.audio_energy:_compute_zcr:132 | ZCR computed: 101163 frames
+2026-05-23 19:42:17 | DEBUG    | backend.analysis.audio_energy:_compute_onset_strength:145 | Onset strength computed: 101163 frames
+2026-05-23 19:42:17 | INFO     | backend.analysis.audio_energy:analyze:87 | Energy analysis complete: 2348 frames generated
+2026-05-23 19:42:17 | INFO     | backend.analysis.scorer:find_viral_moments:54 | Scoring 2348 frames — clip=15s, max=3
+2026-05-23 19:42:18 | INFO     | backend.analysis.scorer:find_viral_moments:63 |   #1: 19:56->20:11 score=1.000
+2026-05-23 19:42:18 | INFO     | backend.analysis.scorer:find_viral_moments:63 |   #2: 25:25->25:40 score=0.977
+2026-05-23 19:42:18 | INFO     | backend.analysis.scorer:find_viral_moments:63 |   #3: 26:17->26:32 score=0.956
+2026-05-23 19:42:18 | INFO     | backend.services.clip_generator:generate_clips:51 | Generating 3 clips from: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779545386\source_video.mp4
+2026-05-23 19:42:19 | INFO     | backend.services.clip_generator:generate_clips:60 | Source video loaded: 2349.0s, [640, 360]
+2026-05-23 19:42:19 | INFO     | backend.services.clip_generator:_extract_single_clip:89 | Extracting clip #1: 19:56 → 20:11 (score=1.000)
+2026-05-23 19:42:22 | INFO     | backend.services.clip_generator:_extract_single_clip:115 | Clip #1 saved: C:\Users\Dipes\antigravity project\ClipGenius\output\job_1779545386_clip_01.mp4 (1.4 MB)
+2026-05-23 19:42:22 | INFO     | backend.services.clip_generator:_extract_single_clip:89 | Extracting clip #2: 25:25 → 25:40 (score=0.977)
+2026-05-23 19:42:25 | INFO     | backend.services.clip_generator:_extract_single_clip:115 | Clip #2 saved: C:\Users\Dipes\antigravity project\ClipGenius\output\job_1779545386_clip_02.mp4 (2.1 MB)
+2026-05-23 19:42:25 | INFO     | backend.services.clip_generator:_extract_single_clip:89 | Extracting clip #3: 26:17 → 26:32 (score=0.956)
+2026-05-23 19:42:28 | INFO     | backend.services.clip_generator:_extract_single_clip:115 | Clip #3 saved: C:\Users\Dipes\antigravity project\ClipGenius\output\job_1779545386_clip_03.mp4 (2.1 MB)
+2026-05-23 19:42:28 | INFO     | backend.services.clip_generator:generate_clips:77 | Successfully generated 3/3 clips
+2026-05-23 19:42:28 | INFO     | backend.utils.file_manager:cleanup_temp:76 | Cleaned up temp directory: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779545386
+2026-05-23 19:42:28 | INFO     | __main__:process_video_job:95 | Job job_1779545386 completed successfully in 162.5s
+2026-05-23 19:49:42 | INFO     | backend.utils.logger:setup_logger:50 | Logger initialised — level=INFO
+2026-05-23 19:49:42 | INFO     | __main__:start_api:159 | Starting ClipGenius API on http://localhost:5000
+2026-05-23 19:52:32 | DEBUG    | backend.utils.validators:is_valid_youtube_url:43 | URL validated successfully: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:52:32 | WARNING  | backend.utils.validators:validate_clip_duration:90 | Clip duration 30s above maximum, using 20s
+2026-05-23 19:52:32 | DEBUG    | backend.utils.file_manager:__init__:39 | FileManager initialised — job_id=job_1779546152, dir=C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546152
+2026-05-23 19:52:33 | DEBUG    | backend.services.downloader:_verify_dependencies:46 | Dependency verified: yt-dlp
+2026-05-23 19:52:33 | DEBUG    | backend.services.downloader:_verify_dependencies:61 | Dependency verified: ffmpeg at C:\Users\Dipes\AppData\Local\Programs\Python\Python310\lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win-x86_64-v7.1.exe
+2026-05-23 19:52:33 | DEBUG    | backend.utils.validators:is_valid_youtube_url:43 | URL validated successfully: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:52:33 | INFO     | backend.services.downloader:get_video_info:85 | Fetching video info: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:52:36 | INFO     | backend.services.downloader:get_video_info:115 | Video info fetched: "Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster)" (213s) by Rick Astley
+2026-05-23 19:52:36 | DEBUG    | backend.utils.validators:is_valid_youtube_url:43 | URL validated successfully: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:52:36 | INFO     | backend.services.downloader:download_video:160 | Downloading video: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:52:36 | INFO     | backend.services.downloader:download_video:161 | Output path: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546152\source_video.mp4
+2026-05-23 19:52:36 | DEBUG    | backend.services.downloader:download_video:183 | Running command: yt-dlp -f best[ext=mp4]/best --merge-output-format mp4 --ffmpeg-location C:\Users\Dipes\AppData\Local\Programs\Python\Python310\lib\site-packages\imageio_ffmpeg\binaries -o C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546152\source_video.mp4 --no-playlist --no-warnings --progress --newline https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:53:07 | INFO     | backend.services.downloader:download_video:202 | Video downloaded successfully: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546152\source_video.mp4 (11.3 MB)
+2026-05-23 19:53:07 | INFO     | backend.services.downloader:extract_audio:233 | Extracting audio from: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546152\source_video.mp4
+2026-05-23 19:53:07 | INFO     | backend.services.downloader:extract_audio:263 | Audio extracted successfully: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546152\source_audio.wav (9.0 MB)
+2026-05-23 19:53:07 | INFO     | backend.analysis.audio_energy:analyze:67 | Starting audio energy analysis: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546152\source_audio.wav
+2026-05-23 19:53:11 | INFO     | backend.analysis.audio_energy:analyze:76 | Audio loaded: 213.0s, sample_rate=22050
+2026-05-23 19:53:12 | DEBUG    | backend.analysis.audio_energy:_compute_rms:104 | RMS computed: 9176 frames, max=1.000
+2026-05-23 19:53:12 | DEBUG    | backend.analysis.audio_energy:_compute_spectral_centroid:119 | Spectral centroid computed: 9176 frames
+2026-05-23 19:53:12 | DEBUG    | backend.analysis.audio_energy:_compute_zcr:132 | ZCR computed: 9176 frames
+2026-05-23 19:53:12 | DEBUG    | backend.analysis.audio_energy:_compute_onset_strength:145 | Onset strength computed: 9176 frames
+2026-05-23 19:53:12 | INFO     | backend.analysis.audio_energy:analyze:87 | Energy analysis complete: 213 frames generated
+2026-05-23 19:53:12 | INFO     | backend.analysis.scorer:find_viral_moments:54 | Scoring 213 frames — clip=20s, max=2
+2026-05-23 19:53:12 | INFO     | backend.analysis.scorer:find_viral_moments:63 |   #1: 01:35->01:55 score=1.000
+2026-05-23 19:53:12 | INFO     | backend.analysis.scorer:find_viral_moments:63 |   #2: 00:41->01:01 score=0.957
+2026-05-23 19:53:12 | INFO     | backend.services.clip_generator:generate_clips:52 | Generating 2 clips from: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546152\source_video.mp4
+2026-05-23 19:53:13 | INFO     | backend.services.clip_generator:generate_clips:61 | Source video loaded: 213.0s, [640, 360]
+2026-05-23 19:53:13 | INFO     | backend.services.clip_generator:_extract_single_clip:91 | Extracting clip #1: 01:35 → 01:55 (score=1.000)
+2026-05-23 19:53:13 | ERROR    | backend.services.clip_generator:generate_clips:70 | Failed to generate clip #1: No module named 'moviepy.video.fx.crop'
+2026-05-23 19:53:13 | INFO     | backend.services.clip_generator:_extract_single_clip:91 | Extracting clip #2: 00:41 → 01:01 (score=0.957)
+2026-05-23 19:53:13 | ERROR    | backend.services.clip_generator:generate_clips:70 | Failed to generate clip #2: No module named 'moviepy.video.fx.crop'
+2026-05-23 19:53:13 | INFO     | backend.services.clip_generator:generate_clips:78 | Successfully generated 0/2 clips
+2026-05-23 19:53:13 | INFO     | backend.utils.file_manager:cleanup_temp:76 | Cleaned up temp directory: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546152
+2026-05-23 19:53:13 | INFO     | __main__:process_video_job:95 | Job job_1779546152 completed successfully in 41.3s
+2026-05-23 19:54:50 | INFO     | backend.utils.logger:setup_logger:50 | Logger initialised — level=INFO
+2026-05-23 19:54:50 | INFO     | __main__:start_api:159 | Starting ClipGenius API on http://localhost:5000
+2026-05-23 19:55:01 | DEBUG    | backend.utils.validators:is_valid_youtube_url:43 | URL validated successfully: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:55:01 | WARNING  | backend.utils.validators:validate_clip_duration:90 | Clip duration 30s above maximum, using 20s
+2026-05-23 19:55:01 | DEBUG    | backend.utils.file_manager:__init__:39 | FileManager initialised — job_id=job_1779546301, dir=C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546301
+2026-05-23 19:55:02 | DEBUG    | backend.services.downloader:_verify_dependencies:46 | Dependency verified: yt-dlp
+2026-05-23 19:55:02 | DEBUG    | backend.services.downloader:_verify_dependencies:61 | Dependency verified: ffmpeg at C:\Users\Dipes\AppData\Local\Programs\Python\Python310\lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win-x86_64-v7.1.exe
+2026-05-23 19:55:02 | DEBUG    | backend.utils.validators:is_valid_youtube_url:43 | URL validated successfully: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:55:02 | INFO     | backend.services.downloader:get_video_info:85 | Fetching video info: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:55:09 | INFO     | backend.services.downloader:get_video_info:115 | Video info fetched: "Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster)" (213s) by Rick Astley
+2026-05-23 19:55:09 | DEBUG    | backend.utils.validators:is_valid_youtube_url:43 | URL validated successfully: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:55:09 | INFO     | backend.services.downloader:download_video:160 | Downloading video: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:55:09 | INFO     | backend.services.downloader:download_video:161 | Output path: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546301\source_video.mp4
+2026-05-23 19:55:09 | DEBUG    | backend.services.downloader:download_video:183 | Running command: yt-dlp -f best[ext=mp4]/best --merge-output-format mp4 --ffmpeg-location C:\Users\Dipes\AppData\Local\Programs\Python\Python310\lib\site-packages\imageio_ffmpeg\binaries -o C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546301\source_video.mp4 --no-playlist --no-warnings --progress --newline https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-05-23 19:56:11 | INFO     | backend.services.downloader:download_video:202 | Video downloaded successfully: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546301\source_video.mp4 (11.3 MB)
+2026-05-23 19:56:11 | INFO     | backend.services.downloader:extract_audio:233 | Extracting audio from: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546301\source_video.mp4
+2026-05-23 19:56:12 | INFO     | backend.services.downloader:extract_audio:263 | Audio extracted successfully: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546301\source_audio.wav (9.0 MB)
+2026-05-23 19:56:12 | INFO     | backend.analysis.audio_energy:analyze:67 | Starting audio energy analysis: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546301\source_audio.wav
+2026-05-23 19:56:16 | INFO     | backend.analysis.audio_energy:analyze:76 | Audio loaded: 213.0s, sample_rate=22050
+2026-05-23 19:56:16 | DEBUG    | backend.analysis.audio_energy:_compute_rms:104 | RMS computed: 9176 frames, max=1.000
+2026-05-23 19:56:17 | DEBUG    | backend.analysis.audio_energy:_compute_spectral_centroid:119 | Spectral centroid computed: 9176 frames
+2026-05-23 19:56:17 | DEBUG    | backend.analysis.audio_energy:_compute_zcr:132 | ZCR computed: 9176 frames
+2026-05-23 19:56:17 | DEBUG    | backend.analysis.audio_energy:_compute_onset_strength:145 | Onset strength computed: 9176 frames
+2026-05-23 19:56:17 | INFO     | backend.analysis.audio_energy:analyze:87 | Energy analysis complete: 213 frames generated
+2026-05-23 19:56:17 | INFO     | backend.analysis.scorer:find_viral_moments:54 | Scoring 213 frames — clip=20s, max=2
+2026-05-23 19:56:17 | INFO     | backend.analysis.scorer:find_viral_moments:63 |   #1: 01:35->01:55 score=1.000
+2026-05-23 19:56:17 | INFO     | backend.analysis.scorer:find_viral_moments:63 |   #2: 00:41->01:01 score=0.957
+2026-05-23 19:56:17 | INFO     | backend.services.clip_generator:generate_clips:52 | Generating 2 clips from: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546301\source_video.mp4
+2026-05-23 19:56:18 | INFO     | backend.services.clip_generator:generate_clips:61 | Source video loaded: 213.0s, [640, 360]
+2026-05-23 19:56:18 | INFO     | backend.services.clip_generator:_extract_single_clip:91 | Extracting clip #1: 01:35 → 01:55 (score=1.000)
+2026-05-23 19:56:21 | INFO     | backend.services.clip_generator:_extract_single_clip:129 | Clip #1 saved: C:\Users\Dipes\antigravity project\ClipGenius\output\job_1779546301_clip_01.mp4 (12.8 MB)
+2026-05-23 19:56:21 | INFO     | backend.services.clip_generator:_extract_single_clip:91 | Extracting clip #2: 00:41 → 01:01 (score=0.957)
+2026-05-23 19:56:24 | INFO     | backend.services.clip_generator:_extract_single_clip:129 | Clip #2 saved: C:\Users\Dipes\antigravity project\ClipGenius\output\job_1779546301_clip_02.mp4 (13.4 MB)
+2026-05-23 19:56:24 | INFO     | backend.services.clip_generator:generate_clips:78 | Successfully generated 2/2 clips
+2026-05-23 19:56:24 | INFO     | backend.utils.file_manager:cleanup_temp:76 | Cleaned up temp directory: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546301
+2026-05-23 19:56:24 | INFO     | __main__:process_video_job:95 | Job job_1779546301 completed successfully in 82.9s
+2026-05-23 19:56:43 | DEBUG    | backend.utils.validators:is_valid_youtube_url:43 | URL validated successfully: https://youtu.be/AaMdXZMvT3w?si=85FNUBWBsHiTnXSe
+2026-05-23 19:56:43 | DEBUG    | backend.utils.file_manager:__init__:39 | FileManager initialised — job_id=job_1779546403, dir=C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546403
+2026-05-23 19:56:44 | DEBUG    | backend.services.downloader:_verify_dependencies:46 | Dependency verified: yt-dlp
+2026-05-23 19:56:44 | DEBUG    | backend.services.downloader:_verify_dependencies:61 | Dependency verified: ffmpeg at C:\Users\Dipes\AppData\Local\Programs\Python\Python310\lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win-x86_64-v7.1.exe
+2026-05-23 19:56:44 | DEBUG    | backend.utils.validators:is_valid_youtube_url:43 | URL validated successfully: https://youtu.be/AaMdXZMvT3w?si=85FNUBWBsHiTnXSe
+2026-05-23 19:56:44 | INFO     | backend.services.downloader:get_video_info:85 | Fetching video info: https://youtu.be/AaMdXZMvT3w?si=85FNUBWBsHiTnXSe
+2026-05-23 19:57:14 | ERROR    | __main__:process_video_job:98 | Job job_1779546403 failed: Timed out fetching video info. Check your internet connection.
+Traceback (most recent call last):
+  File "C:\Users\Dipes\antigravity project\ClipGenius\backend\services\downloader.py", line 88, in get_video_info
+    result = subprocess.run(
+  File "C:\Users\Dipes\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 505, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+  File "C:\Users\Dipes\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 1154, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+  File "C:\Users\Dipes\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 1546, in _communicate
+    raise TimeoutExpired(self.args, orig_timeout)
+subprocess.TimeoutExpired: Command '['yt-dlp', '--dump-json', '--no-download', '--no-warnings', 'https://youtu.be/AaMdXZMvT3w?si=85FNUBWBsHiTnXSe']' timed out after 30 seconds
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Dipes\antigravity project\ClipGenius\backend\api\app.py", line 45, in process_video_job
+    info = downloader.get_video_info(url)
+  File "C:\Users\Dipes\antigravity project\ClipGenius\backend\services\downloader.py", line 137, in get_video_info
+    raise DownloadError("Timed out fetching video info. Check your internet connection.")
+backend.services.downloader.DownloadError: Timed out fetching video info. Check your internet connection.
+
+2026-05-23 19:57:14 | INFO     | backend.utils.file_manager:cleanup_temp:76 | Cleaned up temp directory: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546403
+2026-05-23 19:59:34 | DEBUG    | backend.utils.validators:is_valid_youtube_url:43 | URL validated successfully: https://youtu.be/AaMdXZMvT3w?si=85FNUBWBsHiTnXSe
+2026-05-23 19:59:34 | DEBUG    | backend.utils.file_manager:__init__:39 | FileManager initialised — job_id=job_1779546574, dir=C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546574
+2026-05-23 19:59:35 | DEBUG    | backend.services.downloader:_verify_dependencies:46 | Dependency verified: yt-dlp
+2026-05-23 19:59:36 | DEBUG    | backend.services.downloader:_verify_dependencies:61 | Dependency verified: ffmpeg at C:\Users\Dipes\AppData\Local\Programs\Python\Python310\lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win-x86_64-v7.1.exe
+2026-05-23 19:59:36 | DEBUG    | backend.utils.validators:is_valid_youtube_url:43 | URL validated successfully: https://youtu.be/AaMdXZMvT3w?si=85FNUBWBsHiTnXSe
+2026-05-23 19:59:36 | INFO     | backend.services.downloader:get_video_info:85 | Fetching video info: https://youtu.be/AaMdXZMvT3w?si=85FNUBWBsHiTnXSe
+2026-05-23 19:59:40 | INFO     | backend.services.downloader:get_video_info:115 | Video info fetched: "Survive 30 Days On An Island With Your Ex, Win $250,000" (2349s) by MrBeast
+2026-05-23 19:59:40 | DEBUG    | backend.utils.validators:is_valid_youtube_url:43 | URL validated successfully: https://youtu.be/AaMdXZMvT3w?si=85FNUBWBsHiTnXSe
+2026-05-23 19:59:40 | INFO     | backend.services.downloader:download_video:160 | Downloading video: https://youtu.be/AaMdXZMvT3w?si=85FNUBWBsHiTnXSe
+2026-05-23 19:59:40 | INFO     | backend.services.downloader:download_video:161 | Output path: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546574\source_video.mp4
+2026-05-23 19:59:40 | DEBUG    | backend.services.downloader:download_video:183 | Running command: yt-dlp -f best[ext=mp4]/best --merge-output-format mp4 --ffmpeg-location C:\Users\Dipes\AppData\Local\Programs\Python\Python310\lib\site-packages\imageio_ffmpeg\binaries -o C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546574\source_video.mp4 --no-playlist --no-warnings --progress --newline https://youtu.be/AaMdXZMvT3w?si=85FNUBWBsHiTnXSe
+2026-05-23 20:01:14 | INFO     | backend.services.downloader:download_video:202 | Video downloaded successfully: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546574\source_video.mp4 (186.1 MB)
+2026-05-23 20:01:14 | INFO     | backend.services.downloader:extract_audio:233 | Extracting audio from: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546574\source_video.mp4
+2026-05-23 20:01:16 | INFO     | backend.services.downloader:extract_audio:263 | Audio extracted successfully: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546574\source_audio.wav (98.8 MB)
+2026-05-23 20:01:16 | INFO     | backend.analysis.audio_energy:analyze:67 | Starting audio energy analysis: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546574\source_audio.wav
+2026-05-23 20:01:16 | INFO     | backend.analysis.audio_energy:analyze:76 | Audio loaded: 2349.0s, sample_rate=22050
+2026-05-23 20:01:18 | DEBUG    | backend.analysis.audio_energy:_compute_rms:104 | RMS computed: 101163 frames, max=1.000
+2026-05-23 20:01:29 | DEBUG    | backend.analysis.audio_energy:_compute_spectral_centroid:119 | Spectral centroid computed: 101163 frames
+2026-05-23 20:01:31 | DEBUG    | backend.analysis.audio_energy:_compute_zcr:132 | ZCR computed: 101163 frames
+2026-05-23 20:01:37 | DEBUG    | backend.analysis.audio_energy:_compute_onset_strength:145 | Onset strength computed: 101163 frames
+2026-05-23 20:01:37 | INFO     | backend.analysis.audio_energy:analyze:87 | Energy analysis complete: 2348 frames generated
+2026-05-23 20:01:37 | INFO     | backend.analysis.scorer:find_viral_moments:54 | Scoring 2348 frames — clip=20s, max=3
+2026-05-23 20:01:37 | INFO     | backend.analysis.scorer:find_viral_moments:63 |   #1: 19:52->20:12 score=1.000
+2026-05-23 20:01:37 | INFO     | backend.analysis.scorer:find_viral_moments:63 |   #2: 25:30->25:50 score=0.985
+2026-05-23 20:01:37 | INFO     | backend.analysis.scorer:find_viral_moments:63 |   #3: 25:00->25:20 score=0.963
+2026-05-23 20:01:37 | INFO     | backend.services.clip_generator:generate_clips:52 | Generating 3 clips from: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546574\source_video.mp4
+2026-05-23 20:01:38 | INFO     | backend.services.clip_generator:generate_clips:61 | Source video loaded: 2349.0s, [640, 360]
+2026-05-23 20:01:38 | INFO     | backend.services.clip_generator:_extract_single_clip:91 | Extracting clip #1: 19:52 → 20:12 (score=1.000)
+2026-05-23 20:01:42 | INFO     | backend.services.clip_generator:_extract_single_clip:129 | Clip #1 saved: C:\Users\Dipes\antigravity project\ClipGenius\output\job_1779546574_clip_01.mp4 (19.6 MB)
+2026-05-23 20:01:42 | INFO     | backend.services.clip_generator:_extract_single_clip:91 | Extracting clip #2: 25:30 → 25:50 (score=0.985)
+2026-05-23 20:01:45 | INFO     | backend.services.clip_generator:_extract_single_clip:129 | Clip #2 saved: C:\Users\Dipes\antigravity project\ClipGenius\output\job_1779546574_clip_02.mp4 (18.7 MB)
+2026-05-23 20:01:45 | INFO     | backend.services.clip_generator:_extract_single_clip:91 | Extracting clip #3: 25:00 → 25:20 (score=0.963)
+2026-05-23 20:01:49 | INFO     | backend.services.clip_generator:_extract_single_clip:129 | Clip #3 saved: C:\Users\Dipes\antigravity project\ClipGenius\output\job_1779546574_clip_03.mp4 (19.1 MB)
+2026-05-23 20:01:49 | INFO     | backend.services.clip_generator:generate_clips:78 | Successfully generated 3/3 clips
+2026-05-23 20:01:49 | INFO     | backend.utils.file_manager:cleanup_temp:76 | Cleaned up temp directory: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546574
+2026-05-23 20:01:49 | INFO     | __main__:process_video_job:95 | Job job_1779546574 completed successfully in 134.7s
+2026-05-23 20:03:02 | DEBUG    | backend.utils.validators:is_valid_youtube_url:43 | URL validated successfully: https://youtu.be/AaMdXZMvT3w?si=85FNUBWBsHiTnXSe
+2026-05-23 20:03:02 | DEBUG    | backend.utils.file_manager:__init__:39 | FileManager initialised — job_id=job_1779546782, dir=C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546782
+2026-05-23 20:03:03 | DEBUG    | backend.services.downloader:_verify_dependencies:46 | Dependency verified: yt-dlp
+2026-05-23 20:03:03 | DEBUG    | backend.services.downloader:_verify_dependencies:61 | Dependency verified: ffmpeg at C:\Users\Dipes\AppData\Local\Programs\Python\Python310\lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win-x86_64-v7.1.exe
+2026-05-23 20:03:03 | DEBUG    | backend.utils.validators:is_valid_youtube_url:43 | URL validated successfully: https://youtu.be/AaMdXZMvT3w?si=85FNUBWBsHiTnXSe
+2026-05-23 20:03:03 | INFO     | backend.services.downloader:get_video_info:85 | Fetching video info: https://youtu.be/AaMdXZMvT3w?si=85FNUBWBsHiTnXSe
+2026-05-23 20:03:07 | INFO     | backend.services.downloader:get_video_info:115 | Video info fetched: "Survive 30 Days On An Island With Your Ex, Win $250,000" (2349s) by MrBeast
+2026-05-23 20:03:07 | DEBUG    | backend.utils.validators:is_valid_youtube_url:43 | URL validated successfully: https://youtu.be/AaMdXZMvT3w?si=85FNUBWBsHiTnXSe
+2026-05-23 20:03:07 | INFO     | backend.services.downloader:download_video:160 | Downloading video: https://youtu.be/AaMdXZMvT3w?si=85FNUBWBsHiTnXSe
+2026-05-23 20:03:07 | INFO     | backend.services.downloader:download_video:161 | Output path: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546782\source_video.mp4
+2026-05-23 20:03:07 | DEBUG    | backend.services.downloader:download_video:183 | Running command: yt-dlp -f best[ext=mp4]/best --merge-output-format mp4 --ffmpeg-location C:\Users\Dipes\AppData\Local\Programs\Python\Python310\lib\site-packages\imageio_ffmpeg\binaries -o C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546782\source_video.mp4 --no-playlist --no-warnings --progress --newline https://youtu.be/AaMdXZMvT3w?si=85FNUBWBsHiTnXSe
+2026-05-23 20:06:32 | INFO     | backend.services.downloader:download_video:202 | Video downloaded successfully: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546782\source_video.mp4 (186.1 MB)
+2026-05-23 20:06:32 | INFO     | backend.services.downloader:extract_audio:233 | Extracting audio from: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546782\source_video.mp4
+2026-05-23 20:06:34 | INFO     | backend.services.downloader:extract_audio:263 | Audio extracted successfully: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546782\source_audio.wav (98.8 MB)
+2026-05-23 20:06:34 | INFO     | backend.analysis.audio_energy:analyze:67 | Starting audio energy analysis: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546782\source_audio.wav
+2026-05-23 20:06:35 | INFO     | backend.analysis.audio_energy:analyze:76 | Audio loaded: 2349.0s, sample_rate=22050
+2026-05-23 20:06:36 | DEBUG    | backend.analysis.audio_energy:_compute_rms:104 | RMS computed: 101163 frames, max=1.000
+2026-05-23 20:06:43 | DEBUG    | backend.analysis.audio_energy:_compute_spectral_centroid:119 | Spectral centroid computed: 101163 frames
+2026-05-23 20:06:44 | DEBUG    | backend.analysis.audio_energy:_compute_zcr:132 | ZCR computed: 101163 frames
+2026-05-23 20:06:48 | DEBUG    | backend.analysis.audio_energy:_compute_onset_strength:145 | Onset strength computed: 101163 frames
+2026-05-23 20:06:48 | INFO     | backend.analysis.audio_energy:analyze:87 | Energy analysis complete: 2348 frames generated
+2026-05-23 20:06:48 | INFO     | backend.analysis.scorer:find_viral_moments:54 | Scoring 2348 frames — clip=20s, max=3
+2026-05-23 20:06:48 | INFO     | backend.analysis.scorer:find_viral_moments:63 |   #1: 19:52->20:12 score=1.000
+2026-05-23 20:06:48 | INFO     | backend.analysis.scorer:find_viral_moments:63 |   #2: 25:30->25:50 score=0.985
+2026-05-23 20:06:48 | INFO     | backend.analysis.scorer:find_viral_moments:63 |   #3: 25:00->25:20 score=0.963
+2026-05-23 20:06:48 | INFO     | backend.services.clip_generator:generate_clips:52 | Generating 3 clips from: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546782\source_video.mp4
+2026-05-23 20:06:48 | INFO     | backend.services.clip_generator:generate_clips:61 | Source video loaded: 2349.0s, [640, 360]
+2026-05-23 20:06:48 | INFO     | backend.services.clip_generator:_extract_single_clip:91 | Extracting clip #1: 19:52 → 20:12 (score=1.000)
+2026-05-23 20:06:51 | INFO     | backend.services.clip_generator:_extract_single_clip:129 | Clip #1 saved: C:\Users\Dipes\antigravity project\ClipGenius\output\job_1779546782_clip_01.mp4 (15.1 MB)
+2026-05-23 20:06:51 | INFO     | backend.services.clip_generator:_extract_single_clip:91 | Extracting clip #2: 25:30 → 25:50 (score=0.985)
+2026-05-23 20:06:54 | INFO     | backend.services.clip_generator:_extract_single_clip:129 | Clip #2 saved: C:\Users\Dipes\antigravity project\ClipGenius\output\job_1779546782_clip_02.mp4 (14.6 MB)
+2026-05-23 20:06:54 | INFO     | backend.services.clip_generator:_extract_single_clip:91 | Extracting clip #3: 25:00 → 25:20 (score=0.963)
+2026-05-23 20:06:57 | INFO     | backend.services.clip_generator:_extract_single_clip:129 | Clip #3 saved: C:\Users\Dipes\antigravity project\ClipGenius\output\job_1779546782_clip_03.mp4 (13.1 MB)
+2026-05-23 20:06:57 | INFO     | backend.services.clip_generator:generate_clips:78 | Successfully generated 3/3 clips
+2026-05-23 20:06:57 | INFO     | backend.utils.file_manager:cleanup_temp:76 | Cleaned up temp directory: C:\Users\Dipes\antigravity project\ClipGenius\temp\job_1779546782
+2026-05-23 20:06:57 | INFO     | __main__:process_video_job:95 | Job job_1779546782 completed successfully in 234.4s

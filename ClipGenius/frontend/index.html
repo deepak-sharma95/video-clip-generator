@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClipGenius | Viral YouTube Clip Extractor</title>
+    <meta name="description" content="Automatically extract the most engaging, viral moments from YouTube videos using audio energy analysis.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <main class="app-container">
+        <header>
+            <div class="logo">
+                <i data-lucide="scissors" class="logo-icon"></i>
+                <h1>Clip<span>Genius</span></h1>
+            </div>
+            <p class="subtitle">Extract the most viral moments from any YouTube video in seconds.</p>
+        </header>
+
+        <section class="extractor-card">
+            <form id="extract-form">
+                <div class="input-group">
+                    <label for="youtube-url">YouTube Video URL</label>
+                    <div class="input-wrapper">
+                        <i data-lucide="youtube" class="input-icon"></i>
+                        <input type="url" id="youtube-url" name="youtube-url" placeholder="https://www.youtube.com/watch?v=..." required>
+                    </div>
+                </div>
+
+                <div class="settings-row">
+                    <div class="input-group">
+                        <label for="clip-duration">Duration (seconds)</label>
+                        <select id="clip-duration" name="clip-duration">
+                            <option value="15">15 Seconds</option>
+                            <option value="18">18 Seconds</option>
+                            <option value="20" selected>20 Seconds</option>
+                            <option value="30">30 Seconds</option>
+                            <option value="45">45 Seconds</option>
+                            <option value="60">60 Seconds</option>
+                        </select>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="max-clips">Number of Clips</label>
+                        <select id="max-clips" name="max-clips">
+                            <option value="1">1 Clip</option>
+                            <option value="3" selected>3 Clips</option>
+                            <option value="5">5 Clips</option>
+                            <option value="10">10 Clips</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="settings-row" style="margin-top: -0.5rem">
+                    <div class="input-group">
+                        <label for="video-format">Video Format</label>
+                        <select id="video-format" name="video-format">
+                            <option value="16:9" selected>Original (16:9 - Desktop/YouTube)</option>
+                            <option value="9:16">Portrait (9:16 - TikTok/Shorts)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" id="submit-btn" class="primary-btn">
+                    <span class="btn-text">Extract Viral Clips</span>
+                    <i data-lucide="zap" class="btn-icon"></i>
+                </button>
+            </form>
+        </section>
+
+        <!-- Loading State -->
+        <section id="processing-state" class="processing-state hidden">
+            <div class="loader-container">
+                <div class="spinner"></div>
+                <h3 id="status-heading">Analyzing Video</h3>
+                <p id="status-text">Fetching video information...</p>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+                <div class="progress-steps">
+                    <div class="step step-download" data-step="1">
+                        <div class="step-dot"></div>
+                        <span>Download</span>
+                    </div>
+                    <div class="step step-analyze" data-step="2">
+                        <div class="step-dot"></div>
+                        <span>Analyze</span>
+                    </div>
+                    <div class="step step-score" data-step="3">
+                        <div class="step-dot"></div>
+                        <span>Score</span>
+                    </div>
+                    <div class="step step-clip" data-step="4">
+                        <div class="step-dot"></div>
+                        <span>Generate</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results State -->
+        <section id="results-state" class="results-state hidden">
+            <div class="results-header">
+                <h2>Generated Clips</h2>
+                <button id="new-extraction-btn" class="secondary-btn">Extract Another</button>
+            </div>
+            
+            <div id="clips-grid" class="clips-grid">
+                <!-- Clips will be injected here via JS -->
+            </div>
+        </section>
+        
+        <div id="error-toast" class="toast hidden">
+            <i data-lucide="alert-circle"></i>
+            <span id="error-message">An error occurred.</span>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Initialize lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
